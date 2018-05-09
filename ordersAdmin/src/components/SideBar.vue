@@ -1,33 +1,33 @@
 <template>
   <div class="sidebar" :class="{'sidebar-mini': sidebarShow}">
     <div class="toggle-btn">
-      <Icon type="navicon" @click="toggleSidebar"></Icon>
+        <Icon type="navicon" @click="toggleSidebar"></Icon>
     </div>
     <ul>
-      <li v-link="{ path: '/user'}">
-        <i class="ivu-icon ivu-icon-document-text"></i>
-        <span>设备管理</span>
-      </li>
-      <li  v-link="{ path: '/home'}">
-        <i class="ivu-icon ivu-icon-person-stalker"></i>
-        <span>系统管理</span>   
-      </li>
-      <li>
-        <i class="ivu-icon ivu-icon-map"></i>
-        <span>查询管理</span>   
-      </li>
-      <li>
-        <i class="ivu-icon ivu-icon-heart"></i>
-        <span>日常管理</span>    
-      </li>
-      <li>
-        <i class="ivu-icon ivu-icon-pricetag"></i>
-        <span>条码管理</span>   
-      </li>
-      <li>
-        <i class="ivu-icon ivu-icon-stats-bars"></i>
-        <span>数据管理</span>   
-      </li>
+        <li v-link="{ path: '/home/deskStatus'}">
+            <i class="ivu-icon ivu-icon-document-text"></i>
+            <span>餐桌实况</span>
+        </li>
+        <li  v-link="{ path: '/home'}">
+            <i class="ivu-icon ivu-icon-person-stalker"></i>
+            <span>订单管理</span>   
+        </li>
+        <li>
+            <i class="ivu-icon ivu-icon-map"></i>
+            <span>菜单分类</span>   
+        </li>
+        <li>
+            <i class="ivu-icon ivu-icon-heart"></i>
+            <span>菜品管理</span>    
+        </li>
+        <li>
+            <i class="ivu-icon ivu-icon-pricetag"></i>
+            <span>桌码管理</span>   
+        </li>
+        <li>
+            <i class="ivu-icon ivu-icon-stats-bars"></i>
+            <span>商铺运营</span>   
+        </li>
     </ul>
   </div>
 </template>
