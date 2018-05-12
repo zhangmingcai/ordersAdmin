@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Login from '@/components/pages/login/login.vue';
-import Home from '@/components/pages/home.vue';
-import DeskStatus from '@/components/pages/home/DeskStatus.vue'
+import Login from '@/components/login/login.vue';
+import Home from '@/components/home/home.vue';
+import DeskStatus from '@/components/deskStatus/DeskStatus.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -15,6 +15,7 @@ export default new Router({
       	{
       	  	path: '/home',
       	  	name: 'Home',
+            redirect: '/home/deskStatus',
       	  	component: Home,
             children: [
                 {

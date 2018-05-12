@@ -5,8 +5,9 @@
         <side-bar @sidebar-say="listenSidebar">
             
         </side-bar>
-        <content :if-change-msg="appSayWidth">
-        </content>     
+        <my-content :if-change-msg="appSayWidth">
+        
+        </my-content>     
     </div>
 </div>
 </template>
@@ -14,7 +15,7 @@
 <script>
     import TopMenu from '@/components/TopMenu.vue'
     import SideBar from '@/components/SideBar.vue'
-    import Content from '@/components/Content.vue'
+    import MyContent from '@/components/Content.vue'
 
 export default {
     data () {
@@ -30,7 +31,7 @@ export default {
     components: {
         TopMenu,
         SideBar,
-        Content
+        MyContent
     }
 }
 </script>
