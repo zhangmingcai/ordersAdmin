@@ -2,7 +2,7 @@
   <div class="top-menu">
     <Menu mode="horizontal" theme="dark" active-key="1">
       <Menu-item key="0" style="font-size:34px">
-          logo
+          优  点
       </Menu-item>
       <Menu-item key="1">
           <Icon type="ios-paper"></Icon>

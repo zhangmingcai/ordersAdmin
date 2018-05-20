@@ -3,6 +3,8 @@ import Router from 'vue-router'
 import Login from '@/components/login/login.vue';
 import Home from '@/components/home/home.vue';
 import DeskStatus from '@/components/deskStatus/DeskStatus.vue'
+import Assortment from '@/components/assortment/Assortment.vue'
+import Foods from '@/components/foods/Foods.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -21,6 +23,18 @@ export default new Router({
                 {
                     path: 'deskStatus',
                     component: DeskStatus
+                },
+                {
+                    path: 'assortment',
+                    component: Assortment
+                },
+                {
+                    path: 'foods/:searchId',
+                    component: Foods
+                },
+                {
+                    path: 'foods',
+                    component: Foods
                 }
             ]
       	}

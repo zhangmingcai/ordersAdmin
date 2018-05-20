@@ -1,0 +1,361 @@
+{
+    "list": [
+        {
+            "menuId": 0,
+        	"classify": "店家推荐0"
+        },
+        {
+            "menuId": 1,
+        	"classify": "店家推荐1"
+        },
+        {
+            "menuId": 2,
+        	"classify": "店家推荐2"
+        },
+        {
+            "menuId": 3,
+        	"classify": "店家推荐3"
+        },
+        {
+            "menuId": 4,
+        	"classify": "店家推荐4"
+        },
+        {
+            "menuId": 5,
+        	"classify": "店家推荐5"
+        },
+        {
+            "menuId": 6,
+        	"classify": "店家推荐6"
+        },
+        {
+            "menuId": 7,
+        	"classify": "店家推荐7"
+        },
+        {
+            "menuId": 8,
+        	"classify": "店家推荐8"
+        },
+        {
+            "menuId": 9,
+        	"classify": "店家推荐9"
+        },
+        {
+            "menuId": 10,
+        	"classify": "店家推荐10"
+        }
+    ],
+    "list2": [
+        {
+            "foodId": 0,
+			"foodTitle": "新疆大盘鸡",
+			"foodPrice": "66",
+			"foodDesc": "好吃不贵",
+			"classify":"热门推荐",
+			"menuId":2,
+			"foodSrc": ""
+        },
+        {
+            "foodId": 1,
+			"foodTitle": "新疆大盘鸡1",
+			"foodPrice": "66",
+			"foodDesc": "好吃不贵",
+			"classify":"热门推荐",
+			"menuId":2,
+			"foodSrc": ""
+        },
+        {
+            "foodId": 2,
+			"foodTitle": "新疆大盘鸡2",
+			"foodPrice": "66",
+			"foodDesc": "好吃不贵",
+			"classify":"热门推荐",
+			"menuId":2,
+			"foodSrc": ""
+        },
+        {
+            "foodId": 3,
+			"foodTitle": "新疆大盘鸡3",
+			"foodPrice": "66",
+			"foodDesc": "好吃不贵",
+			"classify":"热门推荐",
+			"menuId":2,
+			"foodSrc": ""
+        },
+        {
+            "foodId": 4,
+			"foodTitle": "新疆大盘鸡4",
+			"foodPrice": "66",
+			"foodDesc": "好吃不贵",
+			"classify":"热门推荐",
+			"menuId":2,
+			"foodSrc": ""
+        }
+    ],
+    "deskStatusList":[
+        {
+            "deskId": 1,
+            "orderNum":1,
+			"orderList":[
+				{
+					"orderId": 0,
+					"startTime": "12:02",
+					"originalPrice": "66",
+					"currentPrice":"50",
+					"reduce":"16",
+					"foods":[
+						{
+							"foodTitle": "新疆大盘鸡11",
+							"number":3
+						},
+						{
+							"foodTitle": "新疆大盘鸡11",
+							"number":3
+						},
+						{
+							"foodTitle": "新疆大盘鸡11",
+							"number":3
+						},
+						{
+							"foodTitle": "新疆大盘鸡11",
+							"number":3
+						},
+						{
+							"foodTitle": "新疆大盘鸡11",
+							"number":3
+						},
+						{
+							"foodTitle": "新疆大盘鸡11",
+							"number":3
+						}
+					]
+				}
+			]
+        },
+        {
+            "deskId": 2,
+            "orderNum":2,
+			"orderList":[
+				{
+					"orderId": 0,
+					"startTime": "12:02",
+					"originalPrice": "66",
+					"currentPrice":"50",
+					"reduce":"16",
+					"foods":[
+						{
+							"foodTitle": "新疆大盘鸡11",
+							"number":3
+						}
+					]
+				},
+				{
+					"orderId": 1,
+					"startTime": "12:02",
+					"originalPrice": "66",
+					"currentPrice":"50",
+					"reduce":"16",
+					"foods":[
+						{
+							"foodTitle": "新疆大盘鸡11",
+							"number":3
+						},
+						{
+							"foodTitle": "新疆大盘鸡11",
+							"number":3
+						},
+						{
+							"foodTitle": "新疆大盘鸡11",
+							"number":3
+						},
+						{
+							"foodTitle": "新疆大盘鸡11",
+							"number":3
+						},
+						{
+							"foodTitle": "新疆大盘鸡11",
+							"number":3
+						},
+						{
+							"foodTitle": "新疆大盘鸡11",
+							"number":3
+						}
+					]
+				}
+			]
+        },
+        {
+            "deskId": 3,
+            "orderNum":0,
+			"orderList":[]
+        },
+        {
+            "deskId": 4,
+            "orderNum":1,
+			"orderList":[
+				{
+					"orderId": 0,
+					"startTime": "12:02",
+					"originalPrice": "66",
+					"currentPrice":"50",
+					"reduce":"16",
+					"foods":[
+						{
+							"foodTitle": "新疆大盘鸡11",
+							"number":3
+						}
+					]
+				}
+			]
+        },
+        {
+            "deskId": 5,
+            "orderNum":2,
+			"orderList":[
+				{
+					"orderId": 0,
+					"startTime": "12:02",
+					"originalPrice": "66",
+					"currentPrice":"50",
+					"reduce":"16",
+					"foods":[
+						{
+							"foodTitle": "新疆大盘鸡11",
+							"number":3
+						}
+					]
+				},
+				{
+					"orderId": 1,
+					"startTime": "22:02",
+					"originalPrice": "100",
+					"currentPrice":"95",
+					"reduce":"5",
+					"foods":[
+						{
+							"foodTitle": "新疆大盘鸡",
+							"number":2
+						}
+					]
+				}
+			]
+        },
+        {
+            "deskId": 6,
+            "orderNum":0,
+			"orderList":[]
+        },
+        {
+            "deskId": 7,
+            "orderNum":1,
+			"orderList":[
+				{
+					"orderId": 0,
+					"startTime": "12:02",
+					"originalPrice": "66",
+					"currentPrice":"50",
+					"reduce":"16",
+					"foods":[
+						{
+							"foodTitle": "新疆大盘鸡11",
+							"number":3
+						}
+					]
+				}
+			]
+        },
+        {
+            "deskId": 8,
+            "orderNum":2,
+			"orderList":[
+				{
+					"orderId": 0,
+					"startTime": "12:02",
+					"originalPrice": "66",
+					"currentPrice":"50",
+					"reduce":"16",
+					"foods":[
+						{
+							"foodTitle": "新疆大盘鸡11",
+							"number":3
+						}
+					]
+				},
+				{
+					"orderId": 1,
+					"startTime": "22:02",
+					"originalPrice": "100",
+					"currentPrice":"95",
+					"reduce":"5",
+					"foods":[
+						{
+							"foodTitle": "新疆大盘鸡",
+							"number":2
+						}
+					]
+				}
+			]
+        },
+        {
+            "deskId": 9,
+            "orderNum":0,
+			"orderList":[]
+        },
+        {
+            "deskId": 10,
+            "orderNum":1,
+			"orderList":[
+				{
+					"orderId": 0,
+					"startTime": "12:02",
+					"originalPrice": "66",
+					"currentPrice":"50",
+					"reduce":"16",
+					"foods":[
+						{
+							"foodTitle": "新疆大盘鸡11",
+							"number":3
+						}
+					]
+				}
+			]
+        },
+        {
+            "deskId": 11,
+            "orderNum":2,
+			"orderList":[
+				{
+					"orderId": 0,
+					"startTime": "12:02",
+					"originalPrice": "66",
+					"currentPrice":"50",
+					"reduce":"16",
+					"foods":[
+						{
+							"foodTitle": "新疆大盘鸡11",
+							"number":3
+						}
+					]
+				},
+				{
+					"orderId": 1,
+					"startTime": "22:02",
+					"originalPrice": "100",
+					"currentPrice":"95",
+					"reduce":"5",
+					"foods":[
+						{
+							"foodTitle": "新疆大盘鸡",
+							"number":2
+						}
+					]
+				}
+			]
+        },
+        {
+            "deskId": 12,
+            "orderNum":0,
+			"orderList":[]
+        }
+    ]
+}

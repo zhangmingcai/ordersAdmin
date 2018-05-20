@@ -1,0 +1,142 @@
+/*                                        接口文档
+
+
+//分类管理进入页面请求的所有分类数据格式
+"list":[
+    {
+        "menuId": 1,
+        "classify": "店家推荐",
+    },
+    {
+        "menuId": 1,
+        "classify": "店家推荐",
+    },
+],
+//菜品管理进入页面请求的所有菜品数据格式
+"list2": [
+    {
+        "foodId": 0,
+		"foodTitle": "新疆大盘鸡",
+		"foodPrice": "66",
+		"foodDesc": "好吃不贵",
+		"classify":"热门推荐",//菜品属于哪个分类
+		"menuId":2,//菜品属于哪个分类id,这俩都是必须要的
+		"foodSrc": ""//菜品图片，为了预览
+    },
+    {
+        "foodId": 1,
+		"foodTitle": "新疆大盘鸡1",
+		"foodPrice": "66",
+		"foodDesc": "好吃不贵",
+		"classify":"热门推荐",
+		"menuId":2,
+		"foodSrc": ""
+    }
+],
+//餐桌实况进入页面请求的所有数据格式
+"deskStatusList":[
+    {
+        "deskId": 1,//桌子id
+        "orderNum":1,//这桌有几个订单，必传，空闲就穿0，orderList传空数组
+		"orderList":[
+			{
+				"orderId": 0,
+				"startTime": "12:02",//这桌下单时刻，传时间戳毫秒，必传
+				"originalPrice": "66",//消费的原价
+				"currentPrice":"50",//消费的现价
+				"reduce":"16",//消费的满减，达到满减就是减多少，没达到传0就行
+				"foods":[//消费的原价该订单里的菜品
+					{
+						"foodTitle": "新疆大盘鸡11",
+						"number":3
+					},
+					{
+						"foodTitle": "新疆大盘鸡11",
+						"number":3
+					},
+					
+				]
+			}
+		]
+    },
+    {
+        "deskId": 2,
+        "orderNum":2,
+		"orderList":[
+			{
+				"orderId": 0,
+				"startTime": "12:02",
+				"originalPrice": "66",
+				"currentPrice":"50",
+				"reduce":"16",
+				"foods":[
+					{
+						"foodTitle": "新疆大盘鸡11",
+						"number":3
+					}
+				]
+			},
+			{
+				"orderId": 1,
+				"startTime": "12:02",
+				"originalPrice": "66",
+				"currentPrice":"50",
+				"reduce":"16",
+				"foods":[
+					{
+						"foodTitle": "新疆大盘鸡11",
+						"number":3
+					},
+					{
+						"foodTitle": "新疆大盘鸡11",
+						"number":3
+					},
+					{
+						"foodTitle": "新疆大盘鸡11",
+						"number":3
+					},
+					{
+						"foodTitle": "新疆大盘鸡11",
+						"number":3
+					},
+					{
+						"foodTitle": "新疆大盘鸡11",
+						"number":3
+					},
+					{
+						"foodTitle": "新疆大盘鸡11",
+						"number":3
+					}
+				]
+			}
+		]
+    },
+    {
+        "deskId": 3,
+        "orderNum":0,//此桌空闲
+		"orderList":[]
+    },
+    
+] 
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/

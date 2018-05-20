@@ -3,32 +3,32 @@
     <div class="toggle-btn">
         <Icon type="navicon" @click="toggleSidebar"></Icon>
     </div>
-    <ul>
-        <li v-link="{ path: '/home/deskStatus'}">
-            <i class="ivu-icon ivu-icon-document-text"></i>
+    <div class="menu">
+        <router-link to="/home/deskStatus">
+            <Icon type="flag"></Icon>
             <span>餐桌实况</span>
-        </li>
-        <li  v-link="{ path: '/home'}">
-            <i class="ivu-icon ivu-icon-person-stalker"></i>
-            <span>订单管理</span>   
-        </li>
-        <li>
-            <i class="ivu-icon ivu-icon-map"></i>
+        </router-link>
+        <router-link to="/home/orders">
+            <Icon type="clipboard"></Icon>
+            <span>订单管理</span>  
+        </router-link> 
+        <router-link to="/home/assortment">
+            <Icon type="map"></Icon>
             <span>菜单分类</span>   
-        </li>
-        <li>
-            <i class="ivu-icon ivu-icon-heart"></i>
-            <span>菜品管理</span>    
-        </li>
-        <li>
-            <i class="ivu-icon ivu-icon-pricetag"></i>
-            <span>桌码管理</span>   
-        </li>
-        <li>
-            <i class="ivu-icon ivu-icon-stats-bars"></i>
-            <span>商铺运营</span>   
-        </li>
-    </ul>
+        </router-link>
+        <router-link to="/home/foods">
+            <Icon type="pizza"></Icon>
+            <span>菜品管理</span>  
+        </router-link>  
+        <router-link to="/home/twoBarCodes">
+            <Icon type="qr-scanner"></Icon>
+            <span>桌码管理</span>  
+        </router-link> 
+        <router-link to="/home/shopsRun">
+            <Icon type="home"></Icon>
+            <span>商铺运营</span> 
+        </router-link>  
+    </div>
   </div>
 </template>
 <script>
@@ -53,71 +53,77 @@ export default {
 @import url("../less/main.less");
 // sidebar基础样式
 .sidebar{
-  transition: all .5s ease;
-  position: fixed;
-  top:@topmenu-marginbottom;
-  left: 0;
-  width: @sidebar-width;
-  height: 1000px;
-  background-color: #171D21;
+    transition: all .5s ease;
+    position: fixed;
+    top:@topmenu-marginbottom;
+    left: 0;
+    width: @sidebar-width;
+    height: 1000px;
+    background-color: #171D21;
   
 
-  .toggle-btn{ 
-    padding-left: 120px;
-    margin-bottom: 10px;
-    height:40px;
-    font-size:34px;
-    &:hover{
-      color:#fff;
+    .toggle-btn{ 
+        padding-left: 120px;
+        margin-bottom: 10px;
+        height:40px;
+        font-size:34px;
+        &:hover{
+            color:#fff;
+        }
     }
-  }
-  ul{
-    background-color: #171D21;  
-    height: 1000px;
-    li{
-      color:#9ea7b4;
-      height:50px;
-      line-height: 50px;
-      font-size: 16px;
-      text-align: center;
-      cursor: pointer;
-      &.v-link-active{
-        color: #39f;
-        border-right: 2px solid #39f;
-        background-color: #313540;
-      }
-      &:hover{
-        color:#fff;
-        background-color: #3c3d40;
-
-      }
-      i{
-        font-size: 18px;
-      }
-      span{
-        display: inline-block;
-        margin-left: 8px;
-      }
+    .menu{
+        background-color: #171D21;  
+        height: 1000px;
+        a{
+            color:#9ea7b4;
+            height:50px;
+            line-height: 50px;
+            font-size: 16px;
+            text-align: center;
+            cursor: pointer;
+            display:block;
+            
+            &.router-link-active{
+                color: #39f;
+                border-right: 2px solid #39f;
+                background-color: #313540;
+                
+                &:hover{
+                    color:#39f;
+                    background-color: #313540;
+                }
+            }
+            &:hover{
+                color:#fff;
+                background-color: #3c3d40;
+            }
+            i{
+                font-size: 18px;
+            }
+            span{
+                display: inline-block;
+                margin-left: 8px;
+            }
+        }
     }
-  }
 }
 // 切换sidebar 动画
 .sidebar-mini {
-  width:60px;
-  .toggle-btn{
-    text-align: center;
-    padding:0;
-  }
-  ul{
-    li{
-      i{        
-        font-size: 26px;
-      }
-      span{
-        display:none;
-      }
+    width:60px;
+    .toggle-btn{
+        text-align: center;
+        padding:0;
     }
-  }
+    ul{
+        li{
+            i{        
+                font-size: 26px;
+            }
+            span{
+                display:none;
+            }
+        }
+    }
 }
 
 
