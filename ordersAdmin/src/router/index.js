@@ -5,6 +5,9 @@ import Home from '@/components/home/home.vue';
 import DeskStatus from '@/components/deskStatus/DeskStatus.vue'
 import Assortment from '@/components/assortment/Assortment.vue'
 import Foods from '@/components/foods/Foods.vue'
+import TwoBarCodes from '@/components/twoBarCodes/TwoBarCodes.vue'
+import ShopRun from '@/components/shopRun/ShopRun.vue'
+
 Vue.use(Router)
 
 export default new Router({
@@ -17,7 +20,7 @@ export default new Router({
       	{
       	  	path: '/home',
       	  	name: 'Home',
-            redirect: '/home/deskStatus',
+            redirect: '/home/shopRun',
       	  	component: Home,
             children: [
                 {
@@ -35,6 +38,14 @@ export default new Router({
                 {
                     path: 'foods',
                     component: Foods
+                },
+                {
+                    path: 'twoBarCodes',
+                    component: TwoBarCodes
+                },
+                {
+                    path: 'shopRun',
+                    component: ShopRun
                 }
             ]
       	}

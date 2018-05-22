@@ -7,7 +7,6 @@
 export default { 
   	data () {
 		return {
-	  		ifChangeMsg: false
 		}
   	},
   	props: ['ifChangeMsg']

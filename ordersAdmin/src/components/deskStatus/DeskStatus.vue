@@ -182,7 +182,7 @@
 				left:180px;
 				top:0;
 				min-height:180px;
-				background:#2a896e;
+				background:rgba(55,55,55,.6);
 				box-sizing:border-box;
 				padding:15px 12px;
 				border-bottom-right-radius:20px;
